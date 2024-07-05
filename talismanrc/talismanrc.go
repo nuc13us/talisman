@@ -39,7 +39,7 @@ type persistedRC struct {
 	CustomSeverities []CustomSeverityConfig          `yaml:"custom_severities,omitempty"`
 	AllowedPatterns  []string                        `yaml:"allowed_patterns,omitempty"`
 	Experimental     ExperimentalConfig              `yaml:"experimental,omitempty"`
-	Threshold        severity.Severity               `default:"low" yaml:"threshold,omitempty"`
+	Threshold        severity.Severity               `default:"medium" yaml:"threshold,omitempty"`
 	ScanConfig       map[CommitID][]FileIgnoreConfig `yaml:"scanconfig,omitempty"`
 	Version          string                          `default:"2.0" yaml:"version"`
 }
